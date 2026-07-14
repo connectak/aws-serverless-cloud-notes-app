@@ -1,0 +1,264 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+
+margin: 0;
+
+font-family:
+Arial,
+sans-serif;
+
+background:
+#eef3f8;
+
+color:
+#1f2937;
+
+}
+
+.container {
+
+width: 90%;
+
+max-width:
+900px;
+
+margin:
+40px auto;
+
+}
+
+h1 {
+
+text-align:
+center;
+
+font-size:
+42px;
+
+margin-bottom:
+5px;
+
+}
+
+.subtitle {
+
+text-align:
+center;
+
+color:
+#64748b;
+
+margin-bottom:
+35px;
+
+}
+
+.note-form {
+
+background:
+white;
+
+padding:
+25px;
+
+border-radius:
+15px;
+
+box-shadow:
+0 5px 20px
+rgba(
+0,
+0,
+0,
+0.08
+);
+
+}
+
+input,
+textarea {
+
+width:
+100%;
+
+padding:
+14px;
+
+margin-bottom:
+15px;
+
+border:
+1px solid
+#cbd5e1;
+
+border-radius:
+8px;
+
+font-size:
+16px;
+
+}
+
+textarea {
+
+resize:
+vertical;
+
+}
+
+button {
+
+border:
+none;
+
+padding:
+12px 20px;
+
+border-radius:
+8px;
+
+cursor:
+pointer;
+
+font-size:
+15px;
+
+}
+
+#saveButton {
+
+background:
+#2563eb;
+
+color:
+white;
+
+}
+
+#cancelButton {
+
+background:
+#64748b;
+
+color:
+white;
+
+display:
+none;
+
+}
+
+#message {
+
+font-weight:
+bold;
+
+}
+
+h2 {
+
+margin-top:
+35px;
+
+}
+
+#notes {
+
+display:
+grid;
+
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(
+250px,
+1fr
+)
+);
+
+gap:
+20px;
+
+}
+
+.note {
+
+background:
+white;
+
+padding:
+20px;
+
+border-radius:
+12px;
+
+box-shadow:
+0 4px 15px
+rgba(
+0,
+0,
+0,
+0.08
+);
+
+}
+
+.note h3 {
+
+margin-top:
+0;
+
+}
+
+.note p {
+
+white-space:
+pre-wrap;
+
+line-height:
+1.5;
+
+}
+
+.date {
+
+font-size:
+12px;
+
+color:
+#64748b;
+
+}
+
+.edit {
+
+background:
+#f59e0b;
+
+color:
+white;
+
+}
+
+.delete {
+
+background:
+#dc2626;
+
+color:
+white;
+
+}
+
+.note button {
+
+margin-right:
+5px;
+
+margin-top:
+10px;
+
+}

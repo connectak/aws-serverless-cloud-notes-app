@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cloud Notes</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>☁️ Cloud Notes</h1>
+
+        <p class="subtitle">
+            Your notes stored securely in the AWS Cloud
+        </p>
+
+        <div class="note-form">
+
+            <!-- Stores the note ID while editing -->
+            <input
+                type="hidden"
+                id="noteId"
+            >
+
+            <!-- Note title -->
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter note title"
+            >
+
+            <!-- Note content -->
+            <textarea
+                id="content"
+                placeholder="Write your note..."
+                rows="6"
+            ></textarea>
+
+            <div class="buttons">
+
+                <button
+                    id="saveButton"
+                    onclick="saveNote()"
+                >
+                    Save Note
+                </button>
+
+                <button
+                    id="cancelButton"
+                    onclick="cancelEdit()"
+                >
+                    Cancel
+                </button>
+
+            </div>
+
+            <!-- Success and error messages -->
+            <p id="message"></p>
+
+        </div>
+
+        <h2>My Notes</h2>
+
+        <!-- Notes from DynamoDB will appear here -->
+        <div id="notes">
+
+            <p>Loading notes...</p>
+
+        </div>
+
+    </div>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
